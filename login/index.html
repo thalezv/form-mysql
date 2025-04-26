@@ -1,0 +1,28 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Form + SQL/login</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="flex">
+                <form action="login.php" method="post">
+                    <h1>Login</h1>
+                    <div class="inputs">
+                        <input type="text" name="nome" id="nome" autocomplete="off" placeholder="" required>
+                        <span>Nome:</span>
+                    </div>
+                    <div class="inputs">
+                        <input type="password" name="senha" id="senha" autocomplete="off" placeholder="" required>
+                        <span>Senha:</span>        
+                    </div>
+                    <input type="submit" name="entrar" id="entrar" value="Entrar">
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

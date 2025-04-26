@@ -1,0 +1,32 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Form + SQL/cadastro</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="flex">
+                <form action="cadastro.php" method="post">
+                    <h1>Cadastro</h1>
+                    <div class="inputs">
+                        <input type="text" name="nome" id="nome" autocomplete="off" placeholder="">
+                        <span>Nome:</span>
+                    </div>
+                    <div class="inputs">
+                        <input type="password" name="senha" id="senha" autocomplete="off" placeholder="">
+                        <span>Senha:</span>        
+                    </div>
+                    <div class="inputs">
+                        <input type="email" name="email" id="email" autocomplete="off" placeholder="">
+                        <span>Email:</span>
+                    </div>
+                    <input type="submit" value="Cadastro">
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sora", sans-serif;
+}
+
+main{
+    height: 100vh;
+    background-color: black;
+}
+
+.container{
+    padding: 5%;
+    height: 100%;
+}
+
+.flex{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_column{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_column h1, .flex_column p{
+    color: white;
+    margin: 20px 0;
+}
+
+.flex_column h1 span{
+    color: greenyellow;
+}
+
+.container .flex form{
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0;
+    padding: 2%;
+}
+
+form h1{
+    color: greenyellow;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+form .inputs{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+form .inputs span{
+    cursor: default;
+    font-size: 20px;
+    display: flex;
+    align-items: end;
+    padding-bottom: 4px;
+    padding-right: 5px;
+    border-bottom: 2px solid black;
+    transition: .5s;
+}
+
+form .inputs input{
+    padding-left: 4px;
+    outline: none;
+    font-size: 18px;
+    text-align: bottom;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    height: 30px;
+    width: 300px;
+    transition: .5s;
+} 
+
+form .inputs input:focus{
+    transition: .5s;
+    border-bottom: 2px solid greenyellow;
+}
+
+form .inputs:nth-child(2) input:focus ~ span{
+    transition: .5s;
+    border-bottom: 2px solid green;
+}
+
+form .inputs:nth-child(3) input:focus ~ span{
+    transition: .5s;
+    border-bottom: 2px solid green;
+}
+
+form .inputs:nth-child(4) input:focus ~ span{
+    transition: .5s;
+    border-bottom: 2px solid green;
+}
+
+form input[type=submit]{
+    font-size: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: greenyellow;
+    color: green;
+    transition: .2s;
+}
+
+form input[type=submit]:hover{
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+.flex a{
+    margin: 0 20px;
+}
+
+.flex a button, .flex_column a button{
+    font-size: 15px;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: greenyellow;
+    color: green;
+    transition: .2s;
+}
+
+.flex_column a button{
+    margin-top: 20px;
+}
+
+.flex a button:hover, .flex_column a button:hover{
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+.container .button-mud{
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .2s;
+}
+
+.line1, .line2, .line3{
+    width: 100%;
+    height: 7px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+.line2{
+    margin: 5px 0;
+}
+
+.button-mud:hover{
+    background-color: greenyellow;
+    transform: scale(1.05);
+}
+
+.button-mud:hover .line2{
+    opacity: 0;
+}
+
+.button-mud:hover .line1{
+    translate: 0 12px;
+    rotate: 45deg;
+}
+
+.button-mud:hover .line3{
+    translate: 0 -12px;
+    rotate: -45deg;
+}
