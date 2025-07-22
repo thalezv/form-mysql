@@ -46,7 +46,18 @@ Em caso de sucesso no cadastro, o usuário será redirecionado automaticamente p
   
 ## 📷 Demonstração
 
-Site no [GithubPages :memo:]()
+Prints do site:
+<div align="center">
+  <img src="prints/tela_inicial.png" alt="pagina inicial" width="400"/>
+  <img src="prints/tela_cadastro.png" alt="pagina de cadastro" width="418"/>
+</div>
+<div align="center">
+  <img src="prints/tela_login.png" alt="pagina de login" width="425"/>
+  <img src="prints/tela_inicial_logado.png" alt="pagina inicial quando logado" width="400"/>
+</div>
+<div align="center">
+  <img src="prints/select_db.png" alt="pagina do banco de dados" width="400"/>
+</div>
 
 ## 📦 Como rodar o projeto
 
